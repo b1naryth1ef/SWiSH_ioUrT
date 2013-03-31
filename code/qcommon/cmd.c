@@ -895,8 +895,8 @@ void Cmd_Init (void) {
 	Cmd_AddCommand ("echo",Cmd_Echo_f);
 	Cmd_AddCommand ("wait", Cmd_Wait_f);
 	Cmd_AddCommand ("+vstr",Cmd_PVstr_f);
-    Cmd_SetCommandCompletionFunc( "+vstr", Cvar_CompleteCvarName );
-    Cmd_AddCommand ("-vstr",Cmd_PVstr_f);
-    Cmd_SetCommandCompletionFunc( "-vstr", Cvar_CompleteCvarName );
+	Cmd_SetCommandCompletionFunc( "+vstr", Cvar_CompleteCvarName );
+	Cmd_AddCommand ("-vstr",Cmd_PVstr_f);
+	Cmd_SetCommandCompletionFunc( "-vstr", Cvar_CompleteCvarName );
 }
 
